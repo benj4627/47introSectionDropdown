@@ -66,7 +66,7 @@ form {
 .headerContainer {
     display: flex;
     justify-content: space-between;
-    padding: var(--stndSpacing);
+    padding: 2em 1em;
 }
 
 .navLogo {
@@ -92,21 +92,67 @@ form {
 }
 
 .loginBtn,
-.registerBtn {
+.registerBtn,
+.learnBtn {
     border: 2px solid black;
     padding: 0.7em 1em;
     border-radius: var(--borderRadius);
     background-color: var(--white);
-    transition: .2s ease-in-out;
-    margin: 0 0.5em;
+    transition: .3s ease-in-out;
+    margin-right: 1rem;
 }
 
 .loginBtn:hover,
-.registerBtn:hover {
-    border: unset;
+.registerBtn:hover,
+.learnBtn:hover
+ {
     font-weight: 700;
+    border-radius: 45px;
+    color: var(--white);
+    background-color: black;
 }
 
+/* main styling */
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    padding: var(--stndSpacing);
+}
+
+.remoteWork {
+    grid-column: 1 / 2;
+    max-width: 35vw;
+    place-self: center;
+}
+
+.remoteWork h1 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-bottom: 3rem;
+}
+
+.remoteWork p {
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.logosContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: var(--stndSpacing);
+    margin-top: 6em;
+}
+
+.mainImg {
+    grid-column: 2 / 3;
+    max-width: 40vw;
+    place-self: center;
+}
+
+.mainImg img {
+    max-height: 70vh;
+}
 
 /* 
 ## Colors
