@@ -228,6 +228,7 @@ form {
 
     .learnBtn {
         margin: unset;
+        padding: 1rem 4rem;
     }
 
     .contentContainer {
