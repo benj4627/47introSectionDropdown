@@ -9,3 +9,5 @@ let dropdownLiEl = document.querySelectorAll('.hidden')
 //classListToggle eller remove .active der ved mouseleave der kollapser dem igen
 
 
+//lav html elementer til burger menu og lav den på samme måde som tidligere notifikations card fra timen. 
+
