@@ -154,6 +154,70 @@ form {
     max-height: 70vh;
 }
 
+/* mobile */
+@media screen and (max-width: 768px) {
+    .globalNav,
+    .loginBtn,
+    .registerBtn {
+        display: none;
+
+    }
+    .gridContainer {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      padding: unset;
+    }
+
+    .remoteWork {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 100vw;
+    }
+
+    .remoteWork h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 1rem; 
+    }
+
+    .remoteWork p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .mainImg {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100vw;
+        place-self: unset;
+    }
+
+    .mainImg img {
+        min-width: 100vw;
+    }
+
+    .learnBtn {
+        margin: unset;
+    }
+
+    .contentContainer {
+        margin-top: var(--stndSpacing);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logosContainer {
+        margin-top: 3em;
+    }
+
+    .logosContainer img {
+        width: 20vw;
+        margin-bottom: 70px;
+    }
+}
+
 /* 
 ## Colors
 
