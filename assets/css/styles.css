@@ -83,12 +83,20 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--largeSpacing);
-    margin-left: 4em;
+    margin-left: 3em;
 }
 
 .globalNav li {
     list-style-type: none;
+    color: var(--gray);
+    transition: .3s ease-in-out;
+    padding: 1rem;
+}
+
+.globalNav li:hover {
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .loginBtn,
@@ -110,6 +118,28 @@ form {
     border-radius: 45px;
     color: var(--white);
     background-color: black;
+    cursor: pointer;
+}
+
+/* dropdown styling */
+.hidden {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.active {
+    height: fit-content;
+    width: 10vw;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
+}
+
+.active li {
+    list-style-type: none;
+    color: black;
+    padding: 1rem;
 }
 
 /* main styling */
