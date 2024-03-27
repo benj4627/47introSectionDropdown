@@ -1,4 +1,15 @@
 /* reset template */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+    --stndSpacing: 1em;
+    --largeSpacing: 2em;
+    --borderRadius: 20px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +19,8 @@
 
 body {
     min-height: 100vh;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
 }
 
 a {
@@ -29,6 +42,7 @@ p {
     max-width: 75ch;
     margin-bottom: 2rem;
     line-height: 1.5rem;
+    font-weight: 500;
 }
 
 img,
@@ -45,3 +59,24 @@ input,
 form {
     font: inherit;
 }
+
+/* 
+## Colors
+
+### Neutral
+
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700 */
+
