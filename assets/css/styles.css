@@ -7,7 +7,7 @@
     --black: hsl(0, 0%, 8%);
     --stndSpacing: 1em;
     --largeSpacing: 2em;
-    --borderRadius: 20px;
+    --borderRadius: 15px;
 }
 
 * {
@@ -21,10 +21,12 @@ body {
     min-height: 100vh;
     font-size: 18px;
     font-family: "Epilogue", sans-serif;
+    background-color: var(--white);
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -59,6 +61,52 @@ input,
 form {
     font: inherit;
 }
+
+/* header and nav*/
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--stndSpacing);
+}
+
+.navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLogo img {
+    padding-top: .5em;
+}
+
+.globalNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--largeSpacing);
+    margin-left: 4em;
+}
+
+.globalNav li {
+    list-style-type: none;
+}
+
+.loginBtn,
+.registerBtn {
+    border: 2px solid black;
+    padding: 0.7em 1em;
+    border-radius: var(--borderRadius);
+    background-color: var(--white);
+    transition: .2s ease-in-out;
+    margin: 0 0.5em;
+}
+
+.loginBtn:hover,
+.registerBtn:hover {
+    border: unset;
+    font-weight: 700;
+}
+
 
 /* 
 ## Colors
