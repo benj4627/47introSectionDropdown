@@ -126,6 +126,7 @@ form {
     height: 0;
     width: 0;
     overflow: hidden;
+    transition: .3s ease-in;
 }
 
 .active {
@@ -134,6 +135,7 @@ form {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
+    transition: .3s ease-in;
 }
 
 .active li {
