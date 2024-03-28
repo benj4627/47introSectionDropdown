@@ -122,6 +122,10 @@ form {
 }
 
 /* dropdown styling */
+.dropdown {
+    position: relative;
+}
+
 .hidden {
     height: 0;
     width: 0;
@@ -129,19 +133,42 @@ form {
     transition: .3s ease-in;
 }
 
+/* .burger {
+    position: absolute;
+    right: 10%;
+    bottom: 93.5%;
+} */
+
 .active {
     height: fit-content;
-    width: 10vw;
+    width: 12vw;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
     transition: .3s ease-in;
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    z-index: 1;
+}
+
+.active1 {
+    height: fit-content;
+    width: 12vw;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
+    transition: .3s ease-in;
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    z-index: 1;
 }
 
 .active li {
     list-style-type: none;
     color: black;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 /* main styling */
@@ -186,6 +213,13 @@ form {
     max-height: 70vh;
 }
 
+/* desktop */
+@media screen and (min-width: 768px) {
+    .burger {
+        display: none; 
+    }
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
     .globalNav,
@@ -194,6 +228,7 @@ form {
         display: none;
 
     }
+
     .gridContainer {
       grid-template-columns: 1fr;
       grid-gap: 1rem;
@@ -215,6 +250,15 @@ form {
     .remoteWork p {
         text-align: center;
         font-size: 14px;
+    }
+
+    .navLogo {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerContainer {
+        display: block;
     }
 
     .mainImg {
@@ -248,6 +292,10 @@ form {
     .logosContainer img {
         width: 20vw;
         margin-bottom: 70px;
+    }
+
+    .burger {
+        margin-bottom: 1rem;
     }
 }
 
