@@ -16,4 +16,19 @@ headerEl.forEach(headerLi => {
 });
 
 
+//fang navigationen, class list add en toggle class, så den flyver ind fra højre. Sæt class i CSS til at have height og width 0. Tjek eventuelt popup fra tidligere opgave omkring notifikation
+
+//fang burger menu 
+let burgerEl = document.querySelector('.burger img');
+let toggleEl = document.querySelector('.toggle');
+
+// Add click event listener
+burgerEl.addEventListener('click', () => {
+    toggleEl.classList.toggle('toggle');
+    toggleEl.classList.toggle('burgerMenuItems');
+
+});
+
+//classlist toggle mellem toggle og burgerMenuItems
+
 

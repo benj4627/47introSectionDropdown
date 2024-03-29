@@ -65,23 +65,21 @@ form {
 /* header and nav*/
 .headerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space;
     padding: 2em 1em;
 }
 
 .navLogo {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .navLogo img {
-    padding-top: .5em;
+    padding-top: 1em;
 }
 
 .globalNav {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-left: 3em;
 }
@@ -97,6 +95,12 @@ form {
     color: black;
     font-weight: 700;
     cursor: pointer;
+}
+
+.navBtns {
+    position: absolute;
+    right: 0%;
+    top: 5%; 
 }
 
 .loginBtn,
@@ -124,6 +128,7 @@ form {
 /* dropdown styling */
 .dropdown {
     position: relative;
+    transition: .3s ease-in-out;
 }
 
 .hidden {
@@ -133,35 +138,16 @@ form {
     transition: .3s ease-in;
 }
 
-/* .burger {
-    position: absolute;
-    right: 10%;
-    bottom: 93.5%;
-} */
-
 .active {
     height: fit-content;
     width: 12vw;
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
-    transition: .3s ease-in;
+    transition: .3s ease-in-out;
     position: absolute;
     top: 12%;
     left: 13%;
-    z-index: 1;
-}
-
-.active1 {
-    height: fit-content;
-    width: 12vw;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
-    transition: .3s ease-in;
-    position: absolute;
-    top: 12%;
-    left: 22%;
     z-index: 1;
 }
 
@@ -222,11 +208,52 @@ form {
 
 /* mobile */
 @media screen and (max-width: 768px) {
+   
+    /* styling til burgermenu */
+    .toggle {
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        position: absolute;
+        left: -10%;
+    }
+
+    .headerContainer {
+        padding: 2rem
+    }
+    
+    .burgerMenuItems {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: white;
+        height: fit-content;
+        width: 50vw;
+        border-radius: 25px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.356);
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        transition: .3s ease-in-out;
+        z-index: 2;
+        position: absolute;
+        top: 10%;
+        right: 0%;
+    }
+
     .globalNav,
     .loginBtn,
     .registerBtn {
-        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .navBtns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+        position: unset;
+        padding-bottom: 3rem;
     }
 
     .gridContainer {
@@ -296,26 +323,6 @@ form {
 
     .burger {
         margin-bottom: 1rem;
+        z-index: 1;
     }
 }
-
-/* 
-## Colors
-
-### Neutral
-
-- Almost White: hsl(0, 0%, 98%)
-- Medium Gray: hsl(0, 0%, 41%)
-- Almost Black: hsl(0, 0%, 8%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
-- Weights: 500, 700 */
-
