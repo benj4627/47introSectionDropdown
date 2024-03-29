@@ -210,6 +210,15 @@ form {
 @media screen and (max-width: 768px) {
    
     /* styling til burgermenu */
+    .active {
+        font-size: 1rem;
+        position: unset;
+        background-color: unset;
+        box-shadow: unset;
+        margin-right: 2rem;
+        text-align: center;
+        width: fit-content;
+    }
     .toggle {
         height: 0;
         width: 0;
