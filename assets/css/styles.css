@@ -157,6 +157,24 @@ form {
     padding: 1.5rem;
 }
 
+/* arrow animation */
+.animArrow {
+    animation-name: spinnerAnim;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in
+}
+
+@keyframes spinnerAnim {
+    from {
+        transform: rotate(0deg);
+     }
+     to {
+        transform: rotate(180deg);
+     }
+}
+
 /* main styling */
 .gridContainer {
     display: grid;
